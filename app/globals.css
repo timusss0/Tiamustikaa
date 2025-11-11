@@ -11,3 +11,12 @@
   --color-content-alter: #717586;
   --color-outer: #d1d5e0;
 }
+
+@layer base{
+  html{
+    @apply scroll-smooth scroll-pt-24
+  }
+  body{
+    @apply bg-base text-content;
+  }
+}
