@@ -1,9 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { RiMenu4Line, RiCloseLine } from "react-icons/ri";
 
 export const Navbar = () => {
+    
   const [darkMode, setDarkMode] = useState(false);
+    
 
   const navLinks = [
     { name: "Home" , href:"#"},
@@ -23,28 +26,29 @@ export const Navbar = () => {
 
   return (
     <header className="w-full py-4">
-      <nav className="flex items-center justify-between bg-white/10 dark:bg-blue-400/10 backdrop-blur-md px-6 py-3 rounded-2xl shadow-md">
+      <nav className="hidden min-[825px]:flex items-center justify-between bg-white/10 dark:bg-blue-400/10 backdrop-blur-md px-6 py-3 rounded-2xl shadow-md">
         
         {/* Logo / Brand */}
         <Link
           href="/"
-          className="text-2xl font-semibold text-black dark:text-black hover:text-gray-900 transition-colors"
+          className="text-2xl font-semibold text-black dark:text-black hover:text-content-alter transition-all duration 300 ease-in-out"
         >
           Tia
         </Link>
 
-        {/* Navigation Links */}
-        <div className="flex items-center gap-6 text-black dark:text-gray-900 text-lg">
-          {navLinks.map((link, index) => (
+       {/* Navigation Links */}
+        <div className="hidden min-[825px]:flex items-center gap-6 text-black dark:text-gray-900 text-lg">
+        {navLinks.map((link, index) => (
             <Link
-                key={link.name}
-                href={link.href}
-                className="hover:text-white transition-colors ">
-                {link.name}
+            key={link.name}
+            href={link.href}
+            className=" font-bold hover:text-content-alter transition-all duration-300 ease-in-out"
+            >
+            {link.name}
             </Link>
-          ))}
+        ))}
         </div>
-
+        
         {/* Dark Mode Toggle */}
         <button
           onClick={() => setDarkMode(!darkMode)}
@@ -77,7 +81,33 @@ export const Navbar = () => {
             </svg>
           )}
         </button>
+        {/* mobile */}
+        <button className="min-[825px]:hidden p-2 text-gray-700 hover:text-gray-900 transition-colors">
+            {/* close button */}
+            <div>
+            <RiCloseLine className="text-2xl "/>
+            </div>
+            <div>
+                <RiMenu4Line className="text-2xl"/>
+            </div>
+        </button>
       </nav>
+      {/* mobile menu */}
+      <div className="min-[825px]:hidden left-0 z-40 w-full fixed top-[78px] ">
+        <div className="bg-white shadow-lg rounded-2xl mx-5 mt-2 p-6">
+            <div className="flex flex-col gap-4">
+                {navLinks.map((link, index) => (
+                <Link
+                    key={link.name}
+                    href={link.href}
+                    className="text-[18px] py-3 border-b font-bold border-gray-100 text-font-semibold text-black dark:text-black hover:text-content-alter transition-all duration 300 ease-in-out">
+                    {link.name}
+                </Link>
+            ))}
+            </div>
+            
+        </div>
+      </div>
     </header>
   );
 };
