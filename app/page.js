@@ -3,6 +3,7 @@
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Portfolio } from "./components/Portfolio";
+import { About } from "./components/About"
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
       <div className="fixed top-0 left-0 w-48 h-48 md:w-96 md:h-96 bg-gradient-to-bl from-rose-300 via-purple-300 to-pink-400 rounded-b-full opacity-40 blur-3xl animate-pulse " style={{ animationDelay: "1s"}}></div>
       <Navbar/>
       <Hero/>
+      <About/>
       <Portfolio/>
+ 
     </div>
   );
 }

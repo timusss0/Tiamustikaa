@@ -1,6 +1,5 @@
 import { PiShootingStarThin } from "react-icons/pi";
 
-
 export const Portfolio = () => {
    const projects = [
   {
@@ -26,7 +25,7 @@ export const Portfolio = () => {
 ];
 
   return (
-    <section className="w-full justify-center items-center h-screen" id="portoflio">
+    <section id="portfolio" className="w-full justify-center items-center h-screen">
         <div className="text-center ">
             <p className="text-2xl text-content font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4"><PiShootingStarThin className="text-4xl font-bold" />Portfolio</p>
             <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8">Check out my featured project</h2>
