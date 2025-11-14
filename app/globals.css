@@ -19,8 +19,11 @@
   body{
     @apply bg-base text-content;
   }
+  
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .custom-gradient{
    background: linear-gradient(135deg, #f8b4d9, #a8c5f7);
 }
