@@ -6,7 +6,7 @@ import { Portfolio } from "./components/Portfolio";
 import { About } from "./components/About"
 import { Resume } from "./components/Resume";
 import { Contact } from "./components/Contact"
-
+import { Footer } from "./components/Footer"
 export default function Home() {
   return (
     <div className="max-w-8xl mx-auto w-[90%]">
@@ -18,6 +18,8 @@ export default function Home() {
       <Portfolio/>
       <Resume/>
       <Contact/>
+      <Footer/>
     </div>
+  
   );
 }

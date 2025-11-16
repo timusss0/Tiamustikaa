@@ -22,7 +22,7 @@ export const Contact = () => {
 
 
      return (
-        <section className="h-screen mt-24 pb-8 relative z-10" id="contact">
+        <section className="mt-24 pb-8 relative z-10" id="contact">
             <div className="text-center ">
                 <p className="text-2xl text-content justify-center font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4"><PiShootingStarThin className="text-4xl font-bold" />Contact</p>
                  <div className="flex justify-center">
@@ -46,7 +46,7 @@ export const Contact = () => {
                      <textarea name="message" id="" placeholder="Your Message..." className="w-full h-24 resize-none border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-rose-300 py-2" required></textarea>
                 </div>
                 <div className="md:col-span-2">
-                    <button type="submit" className="mt-3 flex gap-3 p-4 rounded-full bg-gradient-to-r from-pink-500 to-purple-400 text-[1rem] font-semiboldpy-3 px-6 items-center gap-2 hover:opacity-90 transition-opacity custom-pointer text-white">Send Message <FaPaperPlane/>
+                    <button type="submit" className="mt-3 flex gap-3 p-4 rounded-xl bg-gradient-to-r from-pink-500 to-purple-400 text-[1rem] font-semiboldpy-3 px-6 items-center gap-2 hover:opacity-90 transition-opacity custom-pointer text-white">Send Message <FaPaperPlane/>
                     </button>    
                     <p className="max-w-4xl mx-auto">{result}</p> 
                 </div>

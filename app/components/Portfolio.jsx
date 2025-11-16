@@ -51,7 +51,7 @@ export const Portfolio = () => {
             {project.tags.map((tagText, index) => (
               <span
                 key={index}
-                className="px-3 py-1 text-white text-sm font-medium border rounded-xl border-white/10 backdrop-blur-md bg-gradient-to-r from-purple-400/50 to-pink-300/50"
+                className="px-3 py-1 text-white text-sm font-medium border rounded-xl border-white/10 backdrop-blur-md bg-gradient-to-r from-pink-400/100 to-pink-300/100"
               >
                 {tagText}
               </span>

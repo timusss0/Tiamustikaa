@@ -24,7 +24,7 @@ export const About = () => {
 
           <Link
             href="/resume.pdf"
-            className="px-5 mt-3 py-3 rounded-xl bg-pink-400 text-white font-medium inline-flex items-center gap-2"
+            className="px-5 mt-3 py-3 rounded-xl  bg-gradient-to-r from-pink-500 to-purple-400  text-white font-medium inline-flex items-center gap-2"
             download
           >
             Download CV
