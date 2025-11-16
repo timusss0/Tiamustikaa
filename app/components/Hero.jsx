@@ -14,7 +14,7 @@ export const Hero = () => {
         </div>
         {/* button */}
         <div className="flex flex-col md:flex-row items-center gap-8 my-8  ">
-          <Link href="#portfolio" className="w-full text-lg md:text-xl custom-gradient md:w-auto py-3 md:py-3 px-8 text-black rounded-full font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity duration-300">My Portfolio     <HiOutlineViewGrid /></Link>
+          <Link href="#portfolio" className="w-full text-lg md:text-xl pink-gradient md:w-auto py-3 md:py-3 px-8 text-black rounded-full font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity duration-300">My Portfolio     <HiOutlineViewGrid /></Link>
           <Link href="/resume.pdf"   className="w-full md:w-auto text-lg md:text-xl bg-gradient-to-r from-pink-100 to-blue-100 border-gray-300 border-2 py-2.5 px-8 text-gray-800 rounded-full font-medium flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 shadow-sm" download>My Resume  <HiDownload /></Link>
         </div>
     </div>

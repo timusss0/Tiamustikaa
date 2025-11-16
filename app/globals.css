@@ -28,10 +28,16 @@ html{
    background: linear-gradient(135deg, #f8b4d9, #a8c5f7);
 }
 
+.pink-gradient {
+  background: linear-gradient(135deg, #f59fcb, #96bff5);
+}
+
+
+
 .text-gradient{
-  color: #8f56cc;
-  background: #8f56cc;
-  background: -webkit-linear-gradient(15deg, #8f56cc 0%, #5d4ec4);
+  color: #f060c5;
+  background: #FFC0CB;
+  background: -webkit-linear-gradient(15deg, #FF5C77 0%, #FFC0CB);
   -webkit-background-clip:text;
   -webkit-text-fill-color: transparant;
 }

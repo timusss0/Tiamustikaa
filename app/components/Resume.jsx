@@ -48,29 +48,29 @@ const workData = [
 
 export const Resume = () => {
      return (
-        <section className="h-screen mt-24 pb-8 max-w-7xl  mx-auto flex flex-col justify-center" id="resume">
-            <div className="text-center ">
-                <p className="text-2xl text-content font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4"><PiShootingStarThin className="text-4xl font-bold" />Resume</p>
+        <section className="min-h-screen lg:mt-22 mt-28 pb-12 max-w-7xl  mx-auto flex flex-col justify-center" >
+            <div className="text-center mt-12 ">
+                <p className="text-2xl text-content font-semibold inline-flex items-center mt-44 md:mt-0 gap-1 border-outer px-3 rounded-2xl mb-4"  id="resume" ><PiShootingStarThin className="text-4xl font-bold " />Resume</p>
                 <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8">Education and practical experience</h2>
             </div>
             {/* time line */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-12 relative mb-18 z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 space-y-12 relative mb-18 z-10">
                 {/* education */}
-                <div className="ml-[100px]">
+                <div className="ml-0 lg:ml-[100px]">
                     <h3 className="text-lg md:text-2xl font-bold text-content mb-5">My Education</h3>
                     <div className="relative">
-                        <div className="absolute left-4 top-0 bottom-0 w-0.5 custom-gradient opacity-60"></div>
+                        <div className="absolute left-4 top-0 bottom-0 w-0.5 pink-gradient opacity-60"></div>
                             <div> 
                                 {educationData.map((item,index) => (
                                 <div className="relative flex items-start space-x-6 pb-8" key={index}>
                                     <div className="relative flex-shrink-0">
-                                        <div className="w-8 h-8 custom-gradient rounded-full flex items-center justify-center"> 
+                                        <div className="w-8 h-8 pink-gradient rounded-full flex items-center justify-center"> 
                                             <PiGraduationCapFill className="w-4 h-4 text-white "/> 
                                         </div>
                                     </div>
                                     <div className="flex-1 min-w-0 ">
                                         <div className="flex items-center space-x-2 mb-2 ">
-                                            <span className="text-sm font-medium text-primary bg-primary/10 px-2 py-1 rounded-2xl">{item.year}</span>
+                                            <span className="text-sm font-medium text-gray bg-primary/10 px-2 py-1 rounded-2xl">{item.year}</span>
                                         </div>
                                         <h4 className="text-lg font-semibold text-content ">{item.title}</h4>
                                         <p className="text-gray-600 mb-2 ">{item.institution}</p>
@@ -83,21 +83,21 @@ export const Resume = () => {
                 </div>
 
                 {/* education */}
-                <div className="ml-[120px]">
+              <div className="ml-0 md:lg-[100px]">
                     <h3 className="text-lg md:text-2xl font-bold text-content mb-5">My Intern Experience</h3>
                     <div className="relative">
-                        <div className="absolute left-4 top-0 bottom-0 w-0.5 custom-gradient opacity-60"></div>
+                        <div className="absolute left-4 top-0 bottom-0 w-0.5 pink-gradient opacity-60"></div>
                             <div> 
                                 {workData.map((item,index) => (
                                 <div className="relative flex items-start space-x-6 pb-8" key={index}>
                                     <div className="relative flex-shrink-0">
-                                        <div className="w-8 h-8 custom-gradient rounded-full flex items-center justify-center"> 
+                                        <div className="w-8 h-8 pink-gradient rounded-full flex items-center justify-center"> 
                                             <FaLaptop className="w-4 h-4 text-white "/> 
                                         </div>
                                     </div>
                                     <div className="flex-1 min-w-0 ">
                                         <div className="flex items-center space-x-2 mb-2 ">
-                                            <span className="text-sm font-medium text-primary bg-primary/10 px-2 py-1 rounded-2xl">{item.year}</span>
+                                            <span className="text-sm font-medium text-gray bg-primary/10 px-2 py-1 rounded-2xl">{item.year}</span>
                                         </div>
                                         <h4 className="text-lg font-semibold text-content ">{item.title}</h4>
                                         <p className="text-gray-600 mb-2 ">{item.institution}</p>
