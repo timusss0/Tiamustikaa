@@ -28,7 +28,7 @@ const item = {
     variants={container}
     initial="hidden"
     animate="show"
-    id="/" className="max-w-2xl mb-30 md:mb-88 m-auto flex flex-col md:items-center md:justify-center lg:justify-center text-center lg:items-center pb-12 md:22 overflow-hidden">  
+    id="/" className="max-w-2xl mb-36 md:mb-88 m-auto flex flex-col md:items-center md:justify-center lg:justify-center text-center lg:items-center pb-12 md:22 overflow-hidden">  
         <CursorProvider>
         <Cursor />
         <CursorFollow>Tia</CursorFollow>
