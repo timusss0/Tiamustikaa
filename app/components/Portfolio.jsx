@@ -1,4 +1,6 @@
 import { PiShootingStarThin } from "react-icons/pi";
+import { motion , AnimatePresence } from "motion/react";
+
 
 export const Portfolio = () => {
    const projects = [
@@ -23,21 +25,49 @@ export const Portfolio = () => {
     tags: ["Next.js", "Tailwind CSS"]
   }
 ];
-
+  // animation varians
+  const container = {
+    hidden:{},
+    show:{
+      transition:{
+        starggerChildren:0.25
+      }
+    }
+  }
+const card = {
+  hidden:{opacity:0,y:60,rotateX:-10},
+  show:{opacity:1,y:0,transition:{duration:0.6,ease:"easeOut"}}
+}
   return (
     <section id="portfolio" className="w-full justify-center items-center h-screen">
-        <div className="text-center ">
+        <motion.div 
+        initial={{opacity:0, x:20}}
+        whileInView={{ opacity: 1, y: 1 }}
+        transition={{duration:0.6}}
+        viewPort={{ once: true }}
+        className="text-center ">
             <p className="text-2xl text-content font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4"><PiShootingStarThin className="text-4xl font-bold" />Portfolio</p>
             <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8">Check out my featured project</h2>
-        </div>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8  max-w-8xl">
+        </motion.div>
+  <motion.div
+   container={container}
+        initial="hidden"
+        whileInView="show"
+        viewPort={{ once: true ,amount:0.2}}
+  className="grid grid-cols-1 md:grid-cols-2 gap-8  max-w-8xl">
   {projects.map((project) => (
-    <div
+    <motion.div
+     variants={card}
+      whileHover={{scale:1.03,rotateY:3}}
+      transition={{type:"spring",stiffness:120,damping:12}}
       key={project.title}
       className="group relative bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10 cursor-pointer"
     >
       {/* Gambar */}
-      <div className=" flex justify-center relative overflow-hidden w-full">
+      <motion.div 
+      whileHover={{scale:1.00}}
+      transition={{duration:0.4}}
+      className=" flex justify-center relative overflow-hidden w-full">
         <img
           src={project.image}
           alt={project.title}
@@ -63,10 +93,10 @@ export const Portfolio = () => {
             {project.title}
           </h3>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   ))}
-</div>
+</motion.div>
 
     </section>
   )

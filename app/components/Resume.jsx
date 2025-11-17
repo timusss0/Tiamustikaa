@@ -1,5 +1,7 @@
 import { PiGameController, PiGraduationCapFill ,PiShootingStarThin} from "react-icons/pi";
 import { FaLaptop } from "react-icons/fa6";
+import { motion , AnimatePresence } from "motion/react";
+
 const educationData = [
     {
         year:"2023-2026",

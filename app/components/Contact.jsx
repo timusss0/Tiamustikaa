@@ -1,6 +1,7 @@
 import { PiShootingStarThin } from "react-icons/pi";
 import { FaPaperPlane } from "react-icons/fa";
 import { useState } from "react";
+import { motion , AnimatePresence } from "motion/react";
 
 export const Contact = () => {
 
