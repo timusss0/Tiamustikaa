@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { HiOutlineViewGrid , HiDownload} from "react-icons/hi";
 import { motion } from "motion/react";
-import ShinyText from "./ShinyText";
+import { CursorProvider, Cursor, CursorFollow } from "@/components/animate-ui/components/animate/cursor";
 
 
 export const Hero = () => {
@@ -29,9 +29,9 @@ const item = {
     initial="hidden"
     animate="show"
     id="/" className="max-w-2xl min-h-screen m-auto flex flex-col md:items-center md:justify-center lg:justify-center text-center lg:items-center pb-50 overflow-hidden">
-        {/* <AnimateCursorProvider>
-        <AnimateCursor />
-        <AnimateCursorFollow>Designer</AnimateCursorFollow> */}
+        <CursorProvider>
+        <Cursor />
+        <CursorFollow>Tia</CursorFollow>
         <motion.div variants={item}>
             <Image src="/Tia_mustika.png" width={150} height={150} className="relative z-40 mt-27 rounded-full mb-4 mx-auto object-center object-co" alt="Image profile tia" priority/>
             <motion.h3 
@@ -45,7 +45,7 @@ const item = {
           <Link href="#portfolio" className="w-full text-lg md:text-xl  bg-gradient-to-r from-pink-300 to-blue-300  md:w-auto py-3 md:py-3 px-8 text-black rounded-full font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity duration-300">My Portfolio     <HiOutlineViewGrid /></Link>
           <Link href="/resume.pdf"   className="w-full md:w-auto text-lg md:text-xl bg-gradient-to-r from-pink-100 to-blue-100 border-gray-300 border-2 py-2.5 px-8 text-gray-800 rounded-full font-medium flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 shadow-sm" download>My Resume  <HiDownload /></Link>
         </motion.div>
-        {/* </AnimateCursorProvider> */}
+        </CursorProvider>
     </motion.div>
   )
 }
