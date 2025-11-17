@@ -32,7 +32,7 @@ const item = {
   viewport={{ once: false, amount: 0.3 }}
   className="text-center"
 >
-  <p className="text-2xl  font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4">
+  <p className="text-2xl z-10 font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4">
     <PiShootingStarThin className="text-4xl font-bold" />
     About
   </p>
