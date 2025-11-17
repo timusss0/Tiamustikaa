@@ -33,13 +33,6 @@ const workData = [
       "Worked on continuing an existing WordPress project using plugins, ACF, and custom code snippets to ensure client requirements were met. Also conducted research and development to integrate a frontend using Next.js with a WordPress-powered backend."
   },
   {
-    year: "Mar 2025 - Jul 2025",
-    title: "Cooperation, public relations, international",
-    institution: "Universitas Pembangunan Jaya",
-    description:
-      "Handled public relations and international cooperation activities. Coordinated with partners, assisted in meetings with the Vice Rector, and supported collaborations with foreign universities. Contributed to online and offline event management and created international-themed Instagram content. Strengthened communication and collaboration skills in building strategic relations."
-  },
-  {
     year: "Mar 2024 - Jun 2024",
     title: "Web Developer",
     institution: "PT Cipta Sukses Globalindo (CSG)",
