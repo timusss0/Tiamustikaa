@@ -8,7 +8,10 @@ const syne = Syne({
 
 export const metadata = {
   title: "Tia Portfolio Website",
-  description: "Software Engineer",
+  description: "Fullstack Developer",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
