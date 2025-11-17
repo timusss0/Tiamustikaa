@@ -32,8 +32,8 @@ return (
             transition={{ duration: 0.6 }}
             viewport={{ once: false }}
         >
-            <p className="text-2xl text-content justify-center font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4">
-                <PiShootingStarThin className="text-4xl font-bold" />Contact
+            <p className="text-2xljustify-center   font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4">
+                <PiShootingStarThin className="text-4xl font-bold  "  />Contact
             </p>
 
             <motion.div 
@@ -81,7 +81,7 @@ return (
                     type="text"
                     name="name"
                     placeholder="Your Name"
-                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-rose-300 py-2"
+                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
                     required
                     variants={{
                         hidden: { opacity: 0, y: 20 },
@@ -93,7 +93,7 @@ return (
                     type="email"
                     name="email"
                     placeholder="Your Email"
-                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-rose-300 py-2"
+                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
                     required
                     variants={{
                         hidden: { opacity: 0, y: 20 },
@@ -117,7 +117,7 @@ return (
                     type="text"
                     name="company"
                     placeholder="Company Profile"
-                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-rose-300 py-2"
+                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
                     required
                     variants={{
                         hidden: { opacity: 0, y: 20 },
@@ -129,7 +129,7 @@ return (
                     type="tel"
                     name="phone"
                     placeholder="Phone Number"
-                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-rose-300 py-2"
+                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
                     required
                     variants={{
                         hidden: { opacity: 0, y: 20 },

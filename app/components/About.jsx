@@ -32,7 +32,7 @@ const item = {
   viewport={{ once: false, amount: 0.3 }}
   className="text-center"
 >
-  <p className="text-2xl text-content font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4">
+  <p className="text-2xl  font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4">
     <PiShootingStarThin className="text-4xl font-bold" />
     About
   </p>
@@ -58,7 +58,7 @@ const item = {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.3 }}
       viewport={{ once: false, amount: 0.3 }}
-      className="text-gray-700 leading-relaxed md:w-[430px] lg:text-start text-justify md:text-start"
+      className=" leading-relaxed md:w-[430px] lg:text-start text-justify md:text-start"
     >
       I am a Computer Science student who has been interested in programming since vocational school when I majored in Software Engineering. Since then, I have mastered PHP and continued to develop my skills in web development. During college, I participated in the Student Creativity Program from the Ministry of Education, Culture, Research, and Technology, successfully obtained funding, and completed the project.
     </motion.p>
@@ -68,7 +68,7 @@ const item = {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.5 }}
       viewport={{ once: false, amount: 0.3 }}
-      className="text-gray-700 leading-relaxed"
+      className="leading-relaxed"
     >
        My internship experience has given me a better understanding of the dynamics of real-world work. I am ready to enter the workforce with a strong desire to learn and a passion to contribute my best.
     </motion.p>

@@ -61,10 +61,10 @@ return (
         className="text-center mt-12"
       >
         <p
-          className="text-2xl text-content font-semibold inline-flex items-center mt-44 md:mt-0 gap-1 border-outer px-3 rounded-2xl mb-4"
+          className="text-2xl font-semibold inline-flex items-center mt-44 md:mt-0 gap-1 border-outer px-3 rounded-2xl mb-4"
           id="resume"
         >
-          <PiShootingStarThin className="text-4xl font-bold" /> Resume
+          <PiShootingStarThin className="text-4xl  font-bold" /> Resume
         </p>
         <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8">
           Education and practical experience
@@ -80,7 +80,7 @@ return (
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="text-lg md:text-2xl font-bold text-content mb-5"
+            className="text-lg md:text-2xl  font-bold  mb-5"
           >
             My Education
           </motion.h3>
@@ -113,7 +113,7 @@ return (
                   viewport={{ once: false, amount: 0.3 }}
                   className="w-8 h-8 pink-gradient rounded-full flex items-center justify-center"
                 >
-                  <PiGraduationCapFill className="w-4 h-4 text-white" />
+                  <PiGraduationCapFill className="w-4 h-4" />
                 </motion.div>
 
           
@@ -121,9 +121,9 @@ return (
                   <span className="text-sm font-medium bg-primary/10 px-2 py-1 rounded-2xl">
                     {item.year}
                   </span>
-                  <h4 className="text-lg font-semibold text-content">{item.title}</h4>
-                  <p className="text-gray-600 mb-2">{item.institution}</p>
-                  <p className="text-gray-700 text-sm">{item.description}</p>
+                  <h4 className="text-lg font-semibold">{item.title}</h4>
+                  <p className="mb-2">{item.institution}</p>
+                  <p className="text-sm">{item.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -136,7 +136,7 @@ return (
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="text-lg md:text-2xl font-bold text-content mb-5"
+            className="text-lg md:text-2xl  font-bold mb-5"
           >
             My Intern Experience
           </motion.h3>
@@ -147,7 +147,7 @@ return (
               whileInView={{ opacity: 1, height: "100%" }}
               transition={{ duration: 0.8 }}
               viewport={{ once: false, amount: 0.3 }}
-              className="absolute left-4 top-0 bottom-0 w-0.5 pink-gradient opacity-60"
+              className="absolute left-4 top-0 bottom-0  w-0.5 pink-gradient opacity-60"
             ></motion.div>
 
             {workData.map((item, index) => (
@@ -167,7 +167,7 @@ return (
                   viewport={{ once: false, amount: 0.3 }}
                   className="w-8 h-8 pink-gradient rounded-full flex items-center justify-center"
                 >
-                  <FaLaptop className="w-4 h-4 text-white" />
+                  <FaLaptop className="w-4 h-4" />
                 </motion.div>
 
                 {/* TEXT */}
@@ -175,9 +175,9 @@ return (
                   <span className="text-sm font-medium bg-primary/10 px-2 py-1 rounded-2xl">
                     {item.year}
                   </span>
-                  <h4 className="text-lg font-semibold text-content">{item.title}</h4>
-                  <p className="text-gray-600 mb-2">{item.institution}</p>
-                  <p className="text-gray-700 text-sm">{item.description}</p>
+                  <h4 className="text-lg font-semibold ">{item.title}</h4>
+                  <p className=" mb-2 ">{item.institution}</p>
+                  <p className=" text-sm  ">{item.description}</p>
                 </div>
               </motion.div>
             ))}

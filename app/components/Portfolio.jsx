@@ -1,5 +1,5 @@
 import { PiShootingStarThin } from "react-icons/pi";
-import { motion , AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 
 
 export const Portfolio = () => {
@@ -46,7 +46,7 @@ const card = {
         transition={{duration:0.6}}
         viewPort={{ once: true }}
         className="text-center ">
-            <p className="text-2xl text-content font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4"><PiShootingStarThin className="text-4xl font-bold" />Portfolio</p>
+            <p className="text-2xl font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4"><PiShootingStarThin className="text-4xl font-bold" />Portfolio</p>
             <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8">Check out my featured project</h2>
         </motion.div>
   <motion.div
