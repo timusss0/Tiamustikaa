@@ -49,68 +49,141 @@ const workData = [
 ];
 
 export const Resume = () => {
-     return (
-        <section className="min-h-screen lg:mt-22 mt-28 pb-12 max-w-7xl  mx-auto flex flex-col justify-center" >
-            <div className="text-center mt-12 ">
-                <p className="text-2xl text-content font-semibold inline-flex items-center mt-44 md:mt-0 gap-1 border-outer px-3 rounded-2xl mb-4"  id="resume" ><PiShootingStarThin className="text-4xl font-bold " />Resume</p>
-                <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8">Education and practical experience</h2>
-            </div>
-            {/* time line */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 space-y-12 relative mb-18 z-10">
-                {/* education */}
-                <div className="ml-0 lg:ml-[100px]">
-                    <h3 className="text-lg md:text-2xl font-bold text-content mb-5">My Education</h3>
-                    <div className="relative">
-                        <div className="absolute left-4 top-0 bottom-0 w-0.5 pink-gradient opacity-60"></div>
-                            <div> 
-                                {educationData.map((item,index) => (
-                                <div className="relative flex items-start space-x-6 pb-8" key={index}>
-                                    <div className="relative flex-shrink-0">
-                                        <div className="w-8 h-8 pink-gradient rounded-full flex items-center justify-center"> 
-                                            <PiGraduationCapFill className="w-4 h-4 text-white "/> 
-                                        </div>
-                                    </div>
-                                    <div className="flex-1 min-w-0 ">
-                                        <div className="flex items-center space-x-2 mb-2 ">
-                                            <span className="text-sm font-medium text-gray bg-primary/10 px-2 py-1 rounded-2xl">{item.year}</span>
-                                        </div>
-                                        <h4 className="text-lg font-semibold text-content ">{item.title}</h4>
-                                        <p className="text-gray-600 mb-2 ">{item.institution}</p>
-                                        <p className="text-gray-700 text-sm">{item.description}</p>
-                                    </div>
-                                </div>
-                        ))} 
-                        </div>
-                    </div>
-                </div>
+return (
+    <section className="min-h-screen lg:mt-22 mt-28 pb-12 max-w-7xl mx-auto flex flex-col justify-center">
 
-                {/* education */}
-              <div className="ml-0 md:lg-[100px]">
-                    <h3 className="text-lg md:text-2xl font-bold text-content mb-5">My Intern Experience</h3>
-                    <div className="relative">
-                        <div className="absolute left-4 top-0 bottom-0 w-0.5 pink-gradient opacity-60"></div>
-                            <div> 
-                                {workData.map((item,index) => (
-                                <div className="relative flex items-start space-x-6 pb-8" key={index}>
-                                    <div className="relative flex-shrink-0">
-                                        <div className="w-8 h-8 pink-gradient rounded-full flex items-center justify-center"> 
-                                            <FaLaptop className="w-4 h-4 text-white "/> 
-                                        </div>
-                                    </div>
-                                    <div className="flex-1 min-w-0 ">
-                                        <div className="flex items-center space-x-2 mb-2 ">
-                                            <span className="text-sm font-medium text-gray bg-primary/10 px-2 py-1 rounded-2xl">{item.year}</span>
-                                        </div>
-                                        <h4 className="text-lg font-semibold text-content ">{item.title}</h4>
-                                        <p className="text-gray-600 mb-2 ">{item.institution}</p>
-                                        <p className="text-gray-700 text-sm">{item.description}</p>
-                                    </div>
-                                </div>
-                        ))} 
-                        </div>
-                    </div>
+      {/* TITLE */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: false, amount: 0.3 }}
+        className="text-center mt-12"
+      >
+        <p
+          className="text-2xl text-content font-semibold inline-flex items-center mt-44 md:mt-0 gap-1 border-outer px-3 rounded-2xl mb-4"
+          id="resume"
+        >
+          <PiShootingStarThin className="text-4xl font-bold" /> Resume
+        </p>
+        <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8">
+          Education and practical experience
+        </h2>
+      </motion.div>
+
+    
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 space-y-12 relative mb-18 z-10">
+
+        <div className="ml-0 lg:ml-[100px]">
+          <motion.h3
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="text-lg md:text-2xl font-bold text-content mb-5"
+          >
+            My Education
+          </motion.h3>
+
+          <div className="relative">
+
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              whileInView={{ opacity: 1, height: "100%" }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: false, amount: 0.3 }}
+              className="absolute left-4 top-0 bottom-0 w-0.5 pink-gradient opacity-60"
+            ></motion.div>
+
+
+            {educationData.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="relative flex items-start space-x-6 pb-8"
+              >
+        
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ duration: 0.4, delay: index * 0.15 }}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="w-8 h-8 pink-gradient rounded-full flex items-center justify-center"
+                >
+                  <PiGraduationCapFill className="w-4 h-4 text-white" />
+                </motion.div>
+
+          
+                <div className="flex-1 min-w-0">
+                  <span className="text-sm font-medium bg-primary/10 px-2 py-1 rounded-2xl">
+                    {item.year}
+                  </span>
+                  <h4 className="text-lg font-semibold text-content">{item.title}</h4>
+                  <p className="text-gray-600 mb-2">{item.institution}</p>
+                  <p className="text-gray-700 text-sm">{item.description}</p>
                 </div>
-            </div>
-        </section>
-  )
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+          <div className="ml-0 lg:ml-[100px]">
+          <motion.h3
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="text-lg md:text-2xl font-bold text-content mb-5"
+          >
+            My Intern Experience
+          </motion.h3>
+
+          <div className="relative">
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              whileInView={{ opacity: 1, height: "100%" }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: false, amount: 0.3 }}
+              className="absolute left-4 top-0 bottom-0 w-0.5 pink-gradient opacity-60"
+            ></motion.div>
+
+            {workData.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="relative flex items-start space-x-6 pb-8"
+              >
+                {/* ICON */}
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ duration: 0.4, delay: index * 0.15 }}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="w-8 h-8 pink-gradient rounded-full flex items-center justify-center"
+                >
+                  <FaLaptop className="w-4 h-4 text-white" />
+                </motion.div>
+
+                {/* TEXT */}
+                <div className="flex-1 min-w-0">
+                  <span className="text-sm font-medium bg-primary/10 px-2 py-1 rounded-2xl">
+                    {item.year}
+                  </span>
+                  <h4 className="text-lg font-semibold text-content">{item.title}</h4>
+                  <p className="text-gray-600 mb-2">{item.institution}</p>
+                  <p className="text-gray-700 text-sm">{item.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
