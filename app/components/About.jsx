@@ -23,16 +23,16 @@ const item = {
 
 
     return(
-    <section className="mt-12 pb-8 mb-30" id="about">
+    <section className="mt-5 pb-8 mb-30" id="about">
       {/* TITLE ABOUT */}
-   <motion.div
+   {/* <motion.div
   initial={{ opacity: 0, y: 30 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
   viewport={{ once: false, amount: 0.3 }}
   className="text-center"
 >
-  <p className="text-2xl z-10 font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4">
+  <p className="text-2xl z-10 font-semibold inline-flex justify-center items-center gap-1 border-outer px-3 rounded-2xl mb-4">
     <PiShootingStarThin className="text-4xl font-bold" />
     About
   </p>
@@ -40,7 +40,23 @@ const item = {
   <h2 className="text-lg md:text-3xl lg:text-4xl relative z-10 font-bold text-gradient mb-8">
     Making the web work better for everyone
   </h2>
-</motion.div>
+</motion.div> */}
+         <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="text-center mt-12">
+            <p
+              className="text-2xl font-semibold inline-flex items-center md:mt-0 gap-1 border-outer px-3 rounded-2xl mb-4"
+              id="about" >
+              <PiShootingStarThin className="text-4xl  font-bold" /> About
+            </p>
+            <h2 className="text-sm md:text-3xl lg:text-4xl font-bold text-gradient mb-4">
+             Making the web work better for everyone
+            </h2>
+          </motion.div>
+
 
 {/* GRID 3 COLUMN */}
 <motion.div
