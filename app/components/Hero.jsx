@@ -35,16 +35,16 @@ export const Hero = () => {
       variants={container}
       initial="hidden"
       animate="show"
-      id="/"
+      id="#"
       className="
-        max-w-2xl md:mt-20 mt-[-1px]
-        mx-auto 
-        mb-20 md:mb-44 
+        max-w-2xl md:mt-40
+        mx-auto mt-20
+        mb-20 md:mb-54 
         flex flex-col 
         items-center justify-center 
         text-center 
         pb-12 overflow-hidden
-      "
+      " 
     >
       <CursorProvider>
         <Cursor />

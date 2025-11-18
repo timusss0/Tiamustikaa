@@ -26,7 +26,7 @@ export const Navbar = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   const navLinks = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "#" },
     { name: "About", href: "#about" },
     { name: "Portfolio", href: "#portfolio" },
     { name: "Resume", href: "#resume" },
@@ -38,12 +38,11 @@ export const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="w-full py-4 md:flex md:justify-center sticky top-0 z-50"
+      className="fixed top-0 left-0 w-full py-4 md:flex md:justify-center z-50 px-8 "
     >
       {/* DESKTOP NAV */}
-      <nav className="hidden min-[825px]:flex md:w-6xl items-center justify-between 
-       bg-white/10 
-        backdrop-blur-md px-6 py-3 rounded-2xl shadow-md">
+      <nav className=" hidden min-[825px]:flex md:w-6xl items-center justify-between 
+  bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl shadow-md">
         {/* Logo */}
         <motion.a
           href="/"
@@ -94,7 +93,7 @@ export const Navbar = () => {
       </nav>
 
       {/* MOBILE NAV */}
-       <nav className="flex min-[825px]:hidden md:w-6xl items-center justify-between backdrop-blur-md px-6 py-3 rounded-2xl shadow-md">
+        <nav className="flex min-[825px]:hidden md:w-6xl items-center justify-between backdrop-blur-md px-5 py-3 rounded-2xl shadow-md">
         {/* Logo */}
         <Link
           href="/"
@@ -160,7 +159,7 @@ export const Navbar = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.3 }}
-      className="min-[825px]:hidden fixed top-[86px] left-0 z-40 w-full px-10"
+      className="min-[825px]:hidden fixed top-[86px] left-0 z-40 w-full px-8"
     >
       <div className="shadow-lg rounded-2xl p-3 mt-2 backdrop-blur-md">
         <div className="flex flex-col gap-4">

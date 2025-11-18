@@ -43,23 +43,22 @@ const workData = [
 
 export const Resume = () => {
 return (
-    <section className="min-h-screen lg:mt-22 mt-28 pb-12 max-w-7xl mx-auto flex flex-col justify-center">
-
+    <section className="lg:mt-22 pb-12 max-w-7xl mx-auto flex flex-col justify-center" id="resume">
       {/* TITLE */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-center mt-12"
+        className="text-center mt-16"
       >
         <p
-          className="text-2xl font-semibold inline-flex items-center mt-44 md:mt-0 gap-1 border-outer px-3 rounded-2xl mb-4"
-          id="resume"
+          className="text-2xl font-semibold inline-flex items-center md:mt-0 gap-1 border-outer px-3 rounded-2xl mb-4"
+          
         >
           <PiShootingStarThin className="text-4xl  font-bold" /> Resume
         </p>
-        <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8">
+        <h2 className="text-sm md:text-3xl lg:text-4xl font-bold text-gradient mb-4">
           Education and practical experience
         </h2>
       </motion.div>

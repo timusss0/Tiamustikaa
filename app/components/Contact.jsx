@@ -25,41 +25,21 @@ return (
     <section className="mt-24 pb-8 relative z-10" id="contact">
         
         {/* TOP TEXT */}
-        <motion.div 
-            className="text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: false }}
-        >
-            <p className="text-2xljustify-center   font-semibold inline-flex items-center gap-1 border-outer px-3 rounded-2xl mb-4">
-                <PiShootingStarThin className="text-4xl font-bold  "  />Contact
-            </p>
-
-            <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: false }}
-                className="flex justify-center"
-            >
-                <h2 className="flex min-[825px]:hidden text-2xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8">
-                    Let's make something <br /> awesome together
-                </h2>
-            </motion.div>
-
-            <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: false }}
-                className="flex justify-center"
-            >
-                <h2 className="hidden min-[825px]:flex z-10 text-center text-xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8">
-                    Let's make something awesome together
-                </h2>
-            </motion.div>
-        </motion.div>
+        <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className="text-center">
+                    <p
+                      className="text-2xl font-semibold inline-flex items-center md:mt-0 gap-1 border-outer px-3 rounded-2xl mb-4"
+                      id="contact" >
+                      <PiShootingStarThin className="text-4xl  font-bold" /> Contact
+                    </p>
+                    <h2 className="text-sm md:text-3xl lg:text-4xl font-bold text-gradient mb-5">
+                     Let's make something awesome together
+                    </h2>
+                  </motion.div>
 
         {/* FORM */}
         <form 
@@ -81,7 +61,7 @@ return (
                     type="text"
                     name="name"
                     placeholder="Your Name"
-                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
+                    className="border-b-2 text-sm md:text-lg lg:text-xl border-outer bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
                     required
                     variants={{
                         hidden: { opacity: 0, y: 20 },
@@ -93,7 +73,7 @@ return (
                     type="email"
                     name="email"
                     placeholder="Your Email"
-                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
+                    className="border-b-2 border-outer text-sm md:text-lg lg:text-xl bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
                     required
                     variants={{
                         hidden: { opacity: 0, y: 20 },
@@ -117,7 +97,7 @@ return (
                     type="text"
                     name="company"
                     placeholder="Company Profile"
-                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
+                    className="border-b-2 border-outer text-sm md:text-lg lg:text-xl bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
                     required
                     variants={{
                         hidden: { opacity: 0, y: 20 },
@@ -129,7 +109,7 @@ return (
                     type="tel"
                     name="phone"
                     placeholder="Phone Number"
-                    className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
+                    className="border-b-2 border-outer text-sm md:text-lg lg:text-xl bg-transparent focus:outline-none focus:border-pink-500 border-pink-300 py-2"
                     required
                     variants={{
                         hidden: { opacity: 0, y: 20 },
@@ -149,7 +129,7 @@ return (
                 <textarea 
                     name="message"
                     placeholder="Your Message..."
-                    className="w-full h-24 resize-none border-b-2 border-outer bg-transparent focus:outline-none focus:border-pink-500 border-rose-300 py-2"
+                    className="w-full h-24 resize-none border-b-2 text-sm md:text-lg lg:text-xl border-outer bg-transparent focus:outline-none focus:border-pink-500 border-rose-300 py-2"
                     required
                 ></textarea>
             </motion.div>
@@ -166,7 +146,7 @@ return (
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     type="submit"
-                    className="mt-3 flex gap-3 p-4 rounded-xl bg-gradient-to-r from-pink-500 to-purple-400 text-[1rem] font-semibold items-center hover:opacity-90 transition-opacity text-white"
+                    className="md:mt-3 flex gap-3 p-2 md:p-4 rounded-xl text-sm md:text-lg bg-gradient-to-r from-pink-500 to-purple-400 text-[1rem] font-semibold items-center hover:opacity-90 transition-opacity text-white"
                 >
                     Send Message <FaPaperPlane />
                 </motion.button>

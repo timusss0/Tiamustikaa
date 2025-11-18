@@ -23,30 +23,13 @@ const item = {
 
 
     return(
-    <section className="mt-5 pb-8 mb-30" id="about">
-      {/* TITLE ABOUT */}
-   {/* <motion.div
-  initial={{ opacity: 0, y: 30 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  viewport={{ once: false, amount: 0.3 }}
-  className="text-center"
->
-  <p className="text-2xl z-10 font-semibold inline-flex justify-center items-center gap-1 border-outer px-3 rounded-2xl mb-4">
-    <PiShootingStarThin className="text-4xl font-bold" />
-    About
-  </p>
-
-  <h2 className="text-lg md:text-3xl lg:text-4xl relative z-10 font-bold text-gradient mb-8">
-    Making the web work better for everyone
-  </h2>
-</motion.div> */}
+    <section className="mt-5 pb-8 mb-10 md:mb-30" id="about">
          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="text-center mt-12">
+            className="text-center">
             <p
               className="text-2xl font-semibold inline-flex items-center md:mt-0 gap-1 border-outer px-3 rounded-2xl mb-4"
               id="about" >
