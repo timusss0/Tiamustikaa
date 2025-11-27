@@ -1,5 +1,8 @@
 import { PiShootingStarThin } from "react-icons/pi";
 import { motion } from "motion/react";
+import { FaGithub } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
+
 
 export const Portfolio = () => {
   const projects = [
@@ -7,21 +10,29 @@ export const Portfolio = () => {
       title: "Forkawarior",
       image: "/FORKAWARIOR.png",
       tags: ["HTML", "Tailwind CSS"],
+      github: "https://github.com/timusss0/repo",
+      link: "https://forkawarrior.vercel.app/"
     },
     {
       title: "Ship Alert",
       image: "ship-alertt.png",
       tags: ["IoT", "Laravel", "MySQL", "Bootstrap"],
+      github: "https://github.com/timusss0/repo",
+      link: "https://drive.google.com/file/d/1_ZFPhljtPqEsEaPwrWwZqFaDFgScC3ct/view?usp=sharing"
     },
     {
       title: "Upinjam",
       image: "/UPinjam.png",
       tags: ["Laravel", "MySQL", "Tailwind CSS"],
+      github: "https://github.com/timusss0/repo",
+      link: "https://website.com"
     },
     {
       title: "MyPortfolio",
       image: "/Myportfolio.png",
       tags: ["Next.js", "Tailwind CSS"],
+      github: "https://github.com/timusss0/repo",
+      link: "https://tiamustikaa.vercel.app/"
     },
   ];
 
@@ -101,9 +112,19 @@ export const Portfolio = () => {
                   ))}
                 </div>
 
+              <div class="flex items-center justify-between">
                 <h3 className="text-white font-bold text-xl drop-shadow-md">
                   {project.title}
                 </h3>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  <FiArrowUpRight className="w-10 h-10"/>
+                </a>
+                </div>
               </div>
             </motion.div>
           </motion.div>
