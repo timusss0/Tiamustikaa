@@ -125,7 +125,7 @@ const item = {
       <p className="text-xs uppercase text-gray-500 tracking-wide">GitHub</p>
       <Link
         href="https://github.com/timusss0"
-        className="text-lg font-semibold cursor-pointer hover:text-purple-600 transition"
+        className="text-lg font-semibold cursor-pointer hover:text-pink-400 transition"
       >
         https://github.com/timusss0
       </Link>
