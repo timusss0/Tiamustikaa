@@ -101,7 +101,7 @@ const item = {
     {[
       { label: "Name", value: "Tia Mustika Ramadhani" },
       { label: "Phone", value: "0859-6586-5409" },
-      { label: "Email", value: "mus770101@gmail.com" }
+      { label: "Email", value: "tiamustikaramadhani@gmail.com" }
     ].map((item, i) => (
       <motion.div
         key={i}
