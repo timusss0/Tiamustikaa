@@ -7,6 +7,20 @@ import { FiArrowUpRight } from "react-icons/fi";
 export const Portfolio = () => {
   const projects = [
     {
+      title: "E-Meterai Portal",
+      image: "/e-meterai.png",
+      tags: ["Next.js", "Tailwind CSS", "Midtrans", "PostgreSQL"],
+      // github: "https://github.com/timusss0/repo",
+      link: "https://peruri.inatrading.co.id/"
+    },
+    {
+      title: "Instant Noodles Tracker",
+      image: "/instant-noodles-tracker.png",
+      tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/timusss0/Instant-noodles-tracker.git",
+      link: "https://instant-noodles-tracker.vercel.app/"
+    },
+    {
       title: "Forkawarior",
       image: "/FORKAWARIOR.png",
       tags: ["HTML", "Tailwind CSS"],
@@ -15,7 +29,7 @@ export const Portfolio = () => {
     },
     {
       title: "Ship Alert",
-      image: "ship-alertt.png",
+      image: "/ship-alertt.png",
       tags: ["IoT", "Laravel", "MySQL", "Bootstrap"],
       github: "https://github.com/timusss0/repo",
       link: "https://drive.google.com/file/d/1_ZFPhljtPqEsEaPwrWwZqFaDFgScC3ct/view?usp=sharing"
@@ -112,18 +126,30 @@ export const Portfolio = () => {
                   ))}
                 </div>
 
-              <div class="flex items-center justify-between">
-                <h3 className="text-white font-bold text-xl drop-shadow-md">
-                  {project.title}
-                </h3>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white"
-                >
-                  <FiArrowUpRight className="w-10 h-10"/>
-                </a>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-white font-bold text-xl drop-shadow-md">
+                    {project.title}
+                  </h3>
+                  <div className="flex items-center gap-3">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-pink-400 transition-colors"
+                      >
+                        <FaGithub className="w-7 h-7" />
+                      </a>
+                    )}
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-pink-400 transition-colors"
+                    >
+                      <FiArrowUpRight className="w-8 h-8" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </motion.div>

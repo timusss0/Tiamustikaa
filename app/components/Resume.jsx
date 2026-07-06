@@ -26,6 +26,13 @@ const educationData = [
 
 const workData = [
   {
+    year: "Feb 2026 - Present",
+    title: "Web Developer",
+    institution: "PT Pundi Puri Sejahtera",
+    description:
+      "• Redesigned and developed company websites within the Pundi ecosystem using Next.js, Tailwind CSS, and Shadcn/UI for responsive user interfaces.\n• Built a centralized CMS with role-based access control to manage and distribute news content across multiple platforms, using Drizzle ORM and MySQL for scalable backend operations.\n• Successfully integrated and deployed an on-premise e-meterai system (PERURI) into production using containerized Docker adapters on Ubuntu Server, and currently heading the integration of the e-sign API."
+  },
+  {
     year: "Agu 2025 - Okt 2025",
     title: "Full-stack Developer Intern",
     institution: "Chameleon",
@@ -130,7 +137,7 @@ return (
             viewport={{ once: false, amount: 0.3 }}
             className="text-lg md:text-2xl  font-bold mb-5"
           >
-            My Intern Experience
+            My Experience
           </motion.h3>
 
           <div className="relative">
@@ -169,7 +176,7 @@ return (
                   </span>
                   <h4 className="text-lg font-semibold ">{item.title}</h4>
                   <p className=" mb-2 ">{item.institution}</p>
-                  <p className=" text-sm  ">{item.description}</p>
+                  <p className="text-sm whitespace-pre-line">{item.description}</p>
                 </div>
               </motion.div>
             ))}
